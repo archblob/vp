@@ -1,0 +1,22 @@
+name:                vp
+version:             0.1.0.0
+synopsis:            Vim Pedal
+-- description:         
+license:             BSD3
+license-file:        LICENSE
+author:              Flaviu Andrei Csernik
+maintainer:          fcsernik@gmail.com
+-- copyright:           
+-- category:            
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+executable vp
+  main-is:             VimPedal.hs
+  build-depends:       base     >= 4.8     && <  4.9,
+                       cmdargs  >= 0.10.13 && <  0.11,
+                       alsa-pcm >= 0.6.0.3 && <= 0.6.1,
+                       process  >= 1.2     && <  1.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
